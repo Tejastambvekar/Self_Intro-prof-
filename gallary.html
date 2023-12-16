@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.wallpapersafari.com/6/63/TXmg8R.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .gallery-container {
+            padding: 20px;
+        }
+
+        .gallery-heading {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #11618e; /* Border color: #11618e */
+            border-radius: 5px;
+            margin: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .back-to-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-to-home a {
+            color: #3498db; /* Link color: #3498db */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 100%; /* Full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        <h1 class="gallery-heading">Image Gallery</h1>
+
+        <div class="gallery">
+        <img src="images/6fe37818-afa6-4198-b5a3-9a3dd6dd2ee6.jpg" alt="Photo 1">
+        <img src="images/7314099d-99b1-4b35-83e1-40f50eb9482e.jpg" alt="Photo 2">
+        <img src="images/aabf6d72-6f70-438f-88e5-fe4bbe1090be.jpg" alt="Photo 3">
+        <img src="images/a280d2a0-9800-446f-8cdd-5270cb623a3d.jpg" alt="Photo 4">
+        <img src="images/dbd24e1c-2a11-49df-88a5-25bfb5b277e9.jpg" alt="Photo 5">
+        <img src="images/94b1ac25-8763-44aa-9cdd-e26a39b14d2b.jpg" alt="Photo 6">
+        <img src="images/WhatsApp Image 2023-12-16 at 1.25.28 AM.jpeg" alt="Photo 7">
+        <img src="images/WhatsApp Image 2023-12-16 at 1.25.51 AM.jpeg" alt="Photo 8">
+
+        </div>
+    </div>
+    <div class="back-to-home">
+        <a href="index1.html">Back to Home</a>
+    </div>
+</div>
+
+</body>
+</html>

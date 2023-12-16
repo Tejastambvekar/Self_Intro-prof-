@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #11618e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .profile-box {
+            background-color: #11618e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            max-width: 100px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .button-box {
+            background-color: rgb(255, 255, 255);
+            padding: 50px;
+            text-align: center;
+        }
+
+        .button {
+            background-color: #11618e;
+            color: #f6f6f6;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about-content, .skills-content, .experience-content {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            border: 2px solid #11618e; /* Border Color */
+            padding: 15px; /* Padding */
+        }
+
+        .social-icons {
+            font-size: 2em;
+            margin: 0 10px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index1.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="f.html">Family Details</a>
+        <a href="gallary.html">Personal Photos</a>
+    </div>
+
+    <div class="profile-box">
+        <h2>Tejas Tambvekar</h2>
+        <p>"A highly motivated and hardworking individual who can work swiftly and effectively either alone or as part of a team. Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings. To get an opportunity where I can make the best of my potential and contribute to the organization's growth.."</p>
+        <img class="profile-picture" src="images/DSC_0708.JPG" alt="Profile Picture">
+    </div>
+
+    <div class="button-box">
+        <button class="button" onclick="toggleContent('aboutParagraph')">Projects</button>
+        <button class="button" onclick="toggleContent('skillsContent')">Skills</button>
+        <button class="button" onclick="toggleContent('experienceContent')">Experience</button>
+
+        <div class="about-content" id="aboutParagraph">
+            <h2>- Automation Testing with Selenium</h2>
+            <p>Tested A Web Application Using Selenium IDE Tool With Different Modules Like Unit Testing, Black Box Testing, White Box Testing</p>
+            <h2>- Traffic Sign Recognition Using CNN</h2>
+            <p>Traffic Sign Recognition System detects and recognizes road signs or traffic signs from an image. It will also recognize signs in real-time using CNN. Here, Deep Convolutional Neural Network (CNN) is used to
+                develop Autonomous Traffic or Road Sign detection. </p>
+            <h2>- Real Time Vehicle to Vehicle Communication System</h2>
+            <p>Real Time Vehicle to Vehicle Communication System is generally defined as a system that uses onboard car sensors to provide advanced information, data, and communication technology. The information will
+                improve transportation safety while also lowering public transportation's environmental effect. In dynamic driving settings, wireless devices are already being designed to communicate between automobiles and
+                adjoining infrastructure</p>
+            <h2>- Weather checking application</h2>
+            <p>This Python-based command-line application is designed to help users check weather information for various cities, manage a list of favorite cities, and enable an auto-refresh feature for up-to-date weather data.</p>
+        </div>
+        
+        <div class="about-content skills-content" id="skillsContent" style="display: none;">
+            <h2>• HTML </h2>
+            <h2>• CSS </h2>
+            <h2>• JavaScript </h2>
+            <h2>• Python </h2>
+            <h2>• MYSQL </h2>
+            <h2>• Automation Testing </h2>
+        </div>
+        
+        <div class="about-content experience-content" id="experienceContent" style="display: none;">
+            <h2>MyCaptain (04/2020 - 05/2020)</h2>
+            <p>Sales Marketing Intern with a strong foundation in market research, social media strategy, and campaign analysis. Proven ability to collaborate within cross-functional teams, execute marketing initiatives, and contribute to innovative solutions. Demonstrated aptitude for data-driven decision-making and excellent communication skills. Eager to apply academic knowledge and gain hands-on experience in a dynamic corporate environment.</p>
+            <h2>Infotrix (11/2023 - 12/2023)</h2>
+            <p>Python Developer Intern with a solid grasp of Python programming fundamentals and a passion for problem-solving. Proficient in coding, debugging, and testing applications. Adept at collaborating in a team environment and eager to leverage academic knowledge in real-world development projects. Strong commitment to learning and staying current with emerging technologies. Excited to contribute to innovative solutions while gaining practical experience in a professional setting.</p>
+            <h2>CodSoft (12/2023-Present)</h2>
+            <p>Web Developer Intern</p>
+        </div>
+    </div>
+
+    <!-- Social Icons -->
+    
+    
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+    <div class="social-icons">
+        <h5>Social Media</h5>
+          <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/tejas-tambvekar-0346a7221/e', '_blank')"></i>
+          <i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/__tejas_7212/', '_blank')"></i>
+          <i class="fab fa-github" onclick="window.open('https://github.com/Tejastambvekar', '_blank')"></i>
+      </div>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>
